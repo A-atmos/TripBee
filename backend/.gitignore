@@ -1,0 +1,9 @@
+db.sqlite3
+migrations/
+__pycache__
+.vscode
+.env
+staticfiles/
+test.*
+*.csv
+*.json

@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+*,
+ ::before,
+ ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.outlet>div {
+    background-color: #2d2f40;
+    border-radius: 10px;
+}
+
+input,
+button {
+    font-size: 1rem;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hover-link {
+    color: rgb(108, 108, 233);
+}
+
+.hover-link:hover {
+    color: blue;
+}
+
+select {
+    padding: 0.25rem 0.5rem
+}
+
+.location-icon {
+    margin-right: 0.25rem;
+    margin-left: 0.25rem;
+    width: 20px;
+    aspect-ratio: 1/1;
+}
+
+.container {
+    transition: background 0.4s linear;
+    /* transition: background-color 0.4s linear; */
+}
+
+.loading-error {
+    padding: 1rem;
+    padding-left: 0;
+}
+
+.outline-heading {
+    color: #18b2bb !important
+}
+
+body {
+    background-color: var(--main-bg-color);
+}
+
+.name span {
+    /* color: */
+    text-transform: capitalize;
+}
+
+body.light .name span {
+    color: #18b2bb;
+    ;
+    text-transform: capitalize;
+}
+
+body.light {
+    --main-bg-color: rgba(255, 255, 255, 0.849) !important;
+    --body-font: "Inter", sans-serif !important;
+    --body-color: #2b2b2e !important;
+    --button-bg: #ccc9dc !important;
+    --border-color: rgb(128 129 145 / 24%) !important;
+    --video-bg: #252936 !important;
+    --delay: 0s !important;
+    background-color: white;
+}
+
+body.light .outlet>div {
+    background: white;
+}
+
+:root {
+    --main-bg-color: #1f1d2b;
+    --body-font: "Inter", sans-serif;
+    --body-color: #808191;
+    --button-bg: #353340;
+    --border-color: rgb(128 129 145 / 24%);
+    --video-bg: #252936;
+    --delay: 0s;
+}
+
+
+/* final colors */
+
+body.light {
+    --main-bg-color: rgba(255, 255, 255, 0.849) !important;
+    --body-font: "Inter", sans-serif !important;
+    --body-color: #2b2b2e !important;
+    --button-bg: #ccc9dc !important;
+    --border-color: rgb(128 129 145 / 24%) !important;
+    --video-bg: #252936 !important;
+    --delay: 0s !important;
+    --special-text-color: #979721 !important;
+}
+
+:root {
+    --outer-bg-color: #1f1d2b;
+    --sidebar-link-color: #808191;
+    --sidebar-link-active-color: green;
+    --logo-text-color: blue;
+    --outlet-bg-color: #2d2f40;
+    --button-color: red;
+    --button-font-color: green;
+    --button-hover-color: red;
+    --button-font-hover-color: green;
+    --feed-border-color: red;
+    --feed-separate-color: red;
+    --yellow-touch-color: #f2d250;
+    --yellow-touch-color-2: #fed70d;
+    --special-text-color: #10b810;
+    /* --special-text-color: #edfdfd; */
+    --special-text-color: #fed70d;
+    ;
+    color: #62afbf;
+    /* green */
+    color: #fed70d;
+    /* yellow */
+    color: #f2d250;
+    /* yellow */
+    color: #91cbf4;
+    /* blue */
+    color: #f88787;
+    /* red */
+    color: #edfdfd;
+    /* text light */
+    /*  */
+    --button-bg: #353340;
+    --border-color: rgb(128 129 145 / 24%);
+    --video-bg: #252936;
+    --delay: 0s;
+}
+
+label {
+    text-transform: capitalize;
+}
+
+
+/* ///TODO style it */
+
+::-webkit-scrollbar {
+    width: 6px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: red;
+    border-radius: 10px;
+}
+
+.overflow-auto {
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+}
+
+.small-screen-only {
+    display: none;
+}
+
+@media screen and (max-width:800px) {
+    .small-screen-only {
+        display: unset !important;
+    }
+    .large-screen-only {
+        display: none
+    }
+}

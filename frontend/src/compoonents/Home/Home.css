@@ -1,0 +1,120 @@
+.activities {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #2d2f40;
+    padding: 1rem;
+}
+
+.activities>.heading {
+    text-align: start;
+}
+
+.activity {
+    padding: 1rem;
+    padding-left: 0 !important;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid black;
+    padding-bottom: 2rem;
+}
+
+.activity:last-child {
+    border-bottom: none
+}
+
+.activity__star.rated {
+    color: yellow;
+    font-size: 1.25rem;
+    ;
+}
+
+body.light .activity__star.rated {
+    color: #bbbb0d
+}
+
+.activity__header {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.activity__user {
+    display: flex;
+    align-items: center;
+}
+
+.activity__user a {
+    color: rgb(70, 70, 167);
+}
+
+.activity__user a:hover {
+    color: rgb(36, 36, 167);
+}
+
+.activity__user-image,
+.activity__vendor-image {
+    border-radius: 50%;
+    aspect-ratio: 1/1 !important;
+    width: 50px;
+    margin-right: 0.5rem;
+}
+
+.activity__body {
+    border: 2px solid #4e6d6f;
+    /* border: 2px solid #384752; */
+    padding: 1rem;
+}
+
+.activity__body-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.activity__vendor-text {
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+}
+
+.acitvity__vendor {
+    display: flex;
+    align-items: center;
+}
+
+.acitvity__vendor .vendor-name {
+    font-size: 1.1rem;
+    color: #18b2bb;
+}
+
+.acitvity__vendor .vendor-type {
+    font-size: 0.8rem;
+}
+
+.activity__content {
+    padding-top: 0.5rem;
+}
+
+@media screen and (max-width:800px) {
+    .activities {
+        padding: 0.5rem 1rem !important;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .activities {
+        padding: 0.5rem 0.5rem !important;
+    }
+    .activity {
+        padding: 0.5rem !important;
+    }
+}
+
+@media screen and (max-width:370px) {
+    .activities {
+        padding: 0.5rem 0.0rem !important;
+    }
+    .activity {
+        padding: 0.5rem !important;
+    }
+}

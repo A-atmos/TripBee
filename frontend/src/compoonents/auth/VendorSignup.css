@@ -1,0 +1,85 @@
+form.vendor-signup {
+    max-width: 500px;
+    margin: auto;
+    margin-top: 1rem !important;
+}
+
+.vendor-signup fieldset {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px 2px var(--special-text-color);
+    /* box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4); */
+    padding: 2rem;
+    background-color: white;
+    margin: auto;
+    border: none;
+}
+
+button.vendor-signup {
+    background-color: rgba(39, 174, 95, 0.8);
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 1px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+}
+
+button.vendor-signup:hover,
+button.vendor-signup:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+    background-color: rgba(39, 174, 95, 1);
+}
+
+.vendor-signup legend {
+    background-color: #000;
+    color: #fff;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.25rem 1rem;
+}
+
+.vendor__signupo-text {
+    text-align: center;
+}
+
+.vendor-signup .input-container input {
+    padding: 0.5rem;
+}
+
+.vendor-signup button {
+    /* TODO styule it  */
+}
+
+@media screen and (max-width:500px) {
+    .vendor-signup {
+        margin: 1rem auto;
+        width: 95vw;
+    }
+    .vendor-signup fieldset {
+        padding: 2rem 0.5rem;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:370px) {
+    .vendor-signup {
+        width: 95vw;
+    }
+    .vendor-signup fieldset {
+        padding: 1rem 0.5rem;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .vendor-signup {
+        width: 100vw;
+    }
+    .vendor-signup fieldset {
+        padding: 1rem 0.5rem;
+        width: 95%;
+    }
+}
